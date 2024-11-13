@@ -1,4 +1,4 @@
-## sLLM Federated Learning Framework
+# sLLM Federated Learning Framework _Capstone Project
 
 ### Project Information
 
@@ -8,9 +8,6 @@ This project is focused on developing a framework for federated learning for sma
 
 The sLLM Federated Learning Framework is designed to support the training of small LLMs across multiple devices in a distributed fashion without the need to share raw data. OpenFed handles the federated learning orchestration, ensuring that training is decentralized and data privacy is maintained. Prometheus-7b is used as the base model, providing the language processing capabilities required for various applications.
 
-### Website Address
-
-[sLLM Federated Learning Framework Documentation](https://sllmframework.readthedocs.io/en/latest/)
 
 ### Team Members
 
