@@ -14,10 +14,13 @@ The sLLM Federated Learning Framework is designed to support the training of sma
 
 ### Team Members
 
-- **20011830**: 이하은 (GitHub: [haeun0-0](https://github.com/haeun0-0))
-- **21011814**: 박준우 (GitHub: [wpojjo](https://github.com/wpojjo))
-- **21011815**: 이종호 (GitHub: [ssumaday24](https://github.com/ssumaday24))
-- **21011848**: 정재헌 (GitHub: [leonwater](https://github.com/leonwater))
+- **컴퓨터공학과 19011581**: 이정우 
+- **컴퓨터공학과 20011681**: 서민석 
+- **데이터사이언스학과 21011812**: 김지수
+- **데이터사이언스학과 21011815**: 이종호 (GitHub: [leonwater](https://github.com/leonwater))
+
+
+
 
 ### Development Languages and Tools
 
