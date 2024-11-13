@@ -17,7 +17,7 @@ The sLLM Federated Learning Framework is designed to support the training of sma
 - **컴퓨터공학과 19011581**: 이정우 
 - **컴퓨터공학과 20011681**: 서민석 
 - **데이터사이언스학과 21011812**: 김지수
-- **데이터사이언스학과 21011815**: 이종호 (GitHub: [leonwater](https://github.com/leonwater))
+- **데이터사이언스학과 21011815**: 이종호 
 
 
 
