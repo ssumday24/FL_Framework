@@ -9,7 +9,7 @@
 
 This project is focused on developing a framework for federated learning for small LLMs (sLLM), integrating OpenFed and Prometheus-7b. By leveraging the capabilities of OpenFed for distributed training and Prometheus-7b as the core language model, we aim to create an efficient, privacy-preserving, and collaborative learning environment suitable for IoT edge devices and other small-scale applications.
 
-## Framework Overview
+# Framework Overview
 
 The sLLM Federated Learning Framework is designed to support the training of small LLMs across multiple devices in a distributed fashion without the need to share raw data. OpenFed handles the federated learning orchestration, ensuring that training is decentralized and data privacy is maintained. Prometheus-7b is used as the base model, providing the language processing capabilities required for various applications.
 
