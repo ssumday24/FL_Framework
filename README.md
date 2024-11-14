@@ -24,6 +24,11 @@ The sLLM Federated Learning Framework is designed to support the training of sma
 - Prometheus-7b
 - FlASK ( FOR EVALUATION )
 
+# References
+- https://github.com/prometheus-eval/prometheus-eval
+- https://github.com/rui-ye/OpenFedLLM
+- https://github.com/kaistAI/FLASK?tab=readme-ov-file
+
 ## What is the sLLM Federated Learning Framework?
 
 Federated learning allows models to be trained across multiple devices or servers holding local data samples without exchanging them, thus ensuring data privacy. This project integrates OpenFed, a federated learning orchestration tool, with Prometheus-7b, a small language model, to create a collaborative learning environment. This framework is particularly suitable for IoT edge devices where computational resources are limited, and data privacy is crucial.
