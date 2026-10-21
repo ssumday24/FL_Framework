@@ -23,6 +23,7 @@ The framework allows users to train models collaboratively, utilizing local data
 
 ## Start Guide
 
+
 ## Requirements
 
 - **Federated Learning Setup**: Devices need to support federated learning using OpenFed, which allows distributed training while maintaining data privacy.
@@ -35,8 +36,3 @@ The framework allows users to train models collaboratively, utilizing local data
 
 Apache License, Version 2.0
 
-## 모듈형 답변 생성과 평가
-
-새 파이프라인은 Mistral 답변 생성 → FLASK 스킬별 기준과 참고 답안 → Prometheus 채점 → CSV 및 HTML 시각화 순서로 실행합니다. 연합학습으로 저장한 LoRA 어댑터도 생성 모델에 적용할 수 있습니다. 기존 GPT 평가 경로와 분리되어 있습니다.
-
-설정은 `configs/mistral_prometheus.json`, 실행 방법과 제한 사항은 [파이프라인 안내](docs/pipeline.md)를 참고하세요. `python -m fl_framework validate --config configs/mistral_prometheus.json`으로 모델 다운로드 없이 데이터와 설정을 확인할 수 있습니다.

@@ -2,3 +2,23 @@ __pycache__/
 *.py[cod]
 .venv/
 runs/
+
+# Local experiment answers, reviews, summaries, and charts
+/flask_inference_outputs/
+/flask_evaluation_outputs/
+/FLASK/model_output/outputs/
+/FLASK/gpt_review/outputs/
+
+# Local training checkpoints and downloaded model artifacts
+/OpenFedLLM/output/
+/OpenFedLLM/evaluation/open_ended/data/*/model_answer/
+/OpenFedLLM/evaluation/open_ended/data/*/model_judgment/
+
+# Local credentials (keep datasets, rubrics, and example configs trackable)
+.env
+.env.*
+!.env.example
+/FLASK/openai_info/api_info.json
+
+# Notebook autosaves
+.ipynb_checkpoints/
