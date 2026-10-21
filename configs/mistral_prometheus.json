@@ -1,0 +1,33 @@
+{
+  "run_id": "mistral_base_prometheus_smoke",
+  "project_root": "..",
+  "questions": "FLASK/evaluation_set/flask_evaluation.jsonl",
+  "rubrics": "FLASK/metadata_annotation/skillset/src/skillset_description.json",
+  "output_root": "runs",
+  "limit": 3,
+  "seed": 42,
+  "generator": {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "main",
+    "adapter_id": null,
+    "adapter_subfolder": null,
+    "prompt_format": "chat",
+    "device": "cuda",
+    "dtype": "float16",
+    "load_in_4bit": true,
+    "max_input_tokens": 2048,
+    "max_new_tokens": 256,
+    "temperature": 0.0
+  },
+  "judge": {
+    "model_id": "prometheus-eval/prometheus-7b-v2.0",
+    "revision": "main",
+    "prompt_format": "prometheus",
+    "device": "cuda",
+    "dtype": "float16",
+    "load_in_4bit": true,
+    "max_input_tokens": 4096,
+    "max_new_tokens": 512,
+    "temperature": 0.0
+  }
+}
