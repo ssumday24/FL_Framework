@@ -1,33 +1,19 @@
-# sLLM Federated Learning Framework _Capstone Project
-
-![OpenFed_image](./images/OpenFed_image.png)
+# sLLM Federated Learning Framework \_Capstone Project
 
 # Project Information
 
 This project is focused on developing a framework for federated learning for small LLMs (sLLM), integrating OpenFed and Prometheus-7b. By leveraging the capabilities of OpenFed for distributed training and Prometheus-7b as the core language model, we aim to create an efficient, privacy-preserving, and collaborative learning environment suitable for IoT edge devices and other small-scale applications.
-
-
-# Team Members
-
-- **컴퓨터공학과 19011581**: 이정우 
-- **컴퓨터공학과 20011681**: 서민석 
-- **데이터사이언스학과 21011812**: 김지수
-- **데이터사이언스학과 21011815**: 이종호 
 
 # Framework Overview
 
 The sLLM Federated Learning Framework is designed to support the training of small LLMs across multiple devices in a distributed fashion without the need to share raw data. OpenFed handles the federated learning orchestration, ensuring that training is decentralized and data privacy is maintained. Prometheus-7b is used as the base model, providing the language processing capabilities required for various applications.
 
 # Development Languages and Tools
+
 - Python
 - OpenFed
 - Prometheus-7b
 - FlASK ( FOR EVALUATION )
-
-# References
-- https://github.com/prometheus-eval/prometheus-eval
-- https://github.com/rui-ye/OpenFedLLM
-- https://github.com/kaistAI/FLASK?tab=readme-ov-file
 
 ## What is the sLLM Federated Learning Framework?
 
@@ -43,9 +29,14 @@ The framework allows users to train models collaboratively, utilizing local data
 - **Model Training**: Prometheus-7b is used as the base model for training, and users can contribute to the global model using their local datasets.
 - **Framework Integration**: The framework is designed to integrate with various IoT devices and edge environments, making it adaptable for a range of applications.
 
-----------
+---
 
 ### License
 
 Apache License, Version 2.0
 
+## 모듈형 답변 생성과 평가
+
+새 파이프라인은 Mistral 답변 생성 → FLASK 스킬별 기준과 참고 답안 → Prometheus 채점 → CSV 및 HTML 시각화 순서로 실행합니다. 연합학습으로 저장한 LoRA 어댑터도 생성 모델에 적용할 수 있습니다. 기존 GPT 평가 경로와 분리되어 있습니다.
+
+설정은 `configs/mistral_prometheus.json`, 실행 방법과 제한 사항은 [파이프라인 안내](docs/pipeline.md)를 참고하세요. `python -m fl_framework validate --config configs/mistral_prometheus.json`으로 모델 다운로드 없이 데이터와 설정을 확인할 수 있습니다.
